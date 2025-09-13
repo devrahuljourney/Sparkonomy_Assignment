@@ -7,11 +7,23 @@ import {
   BarElement,
   LineElement,
   PointElement,
+  BarController,
+  LineController,
   Tooltip,
   Legend,
 } from 'chart.js';
 
-ChartJS.register(CategoryScale, LinearScale, BarElement, LineElement, PointElement, Tooltip, Legend);
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  LineElement,
+  PointElement,
+  BarController,
+  LineController,
+  Tooltip,
+  Legend
+);
 
 export default function IncomeTrend() {
   const chartData = {
